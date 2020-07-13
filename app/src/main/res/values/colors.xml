@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6676CE</color>
+    <color name="colorPrimaryDark">#3146DD</color>
+    <color name="color1">#AEEEEE</color>
+    <color name="colorAccent">#6E94CE</color>
+    <color name="colorYANGHONG">#FF4081</color>
+    <color name="colorLV">#32CD32</color>
+    <color name="colorHONG">#EE0000</color>
+    <color name="colorTUHUANG">#EEC900</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorblue">#00FFFF</color>
+    <color name="colorbackground">#f4ecec</color>
+    <color name="colorblack">#090808</color>
+    <color name="colorwhitepurple">#D5C7C0DD</color>
+    <color name="colorwhite_alpha">#8AFFFFFF</color>
+    <color name="colorwhite_view">#6BAFACAC</color>
+
+</resources>

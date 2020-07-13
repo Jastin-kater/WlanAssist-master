@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ronda.bluetoothassist">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/show2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ContentActivity"></activity>
+        <activity android:name=".JingBaoActivity" />
+
+        <service
+            android:name=".service.DataService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".graph_container.JumpActivity" />
+        <activity
+            android:name=".NavPageActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IPChangeActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".RecycleL_expended_text.Mach_info_activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".about.About"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SettingActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".linesets.LineChatActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+        android:name=".history.HistoryActivity"
+        android:theme="@style/AppTheme" />
+        <activity
+            android:name=".linesets.MyChatActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

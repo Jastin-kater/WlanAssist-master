@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/first_nav_bg"
+    android:id="@+id/nav_relative">
+
+
+<!--为了设备的兼容性，考虑实时的对设备的屏幕大小进行测量，进而设置控件到边框的距离-->
+    <ren.define.circlepictext.CirclePicText
+        android:id="@+id/circlepic_lefttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg_selector"
+
+        />
+
+
+    <!--这里需要设置靠右边框的距离，所以需要将alignParentRight设置为true，以便右对齐-->
+    <ren.define.circlepictext.CirclePicText
+        android:id="@+id/circlepic_righttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg_selector"
+        android:layout_alignParentRight="true"
+
+        />
+
+
+
+
+
+
+    <ren.define.circlepictext.CirclePicText
+        android:id="@+id/circlepic_leftmid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg_selector"
+
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/circlepic_lefttop"
+        />
+    <ren.define.circlepictext.CirclePicText
+        android:id="@+id/circlepic_rightmid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg_selector"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/circlepic_righttop"
+        android:layout_marginTop="30dp"
+
+        />
+
+
+
+    <ren.define.circlepictext.CirclePicText
+        android:id="@+id/circlepic_leftdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg_selector"
+
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/circlepic_leftmid"
+        />
+
+    <ren.define.circlepictext.CirclePicText
+        android:id="@+id/circlepic_rightdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg_selector"
+        android:layout_below="@+id/circlepic_rightmid"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/circlepic_rightdown"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/zgshlogo"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="中石化石油工程设计有限公司"
+            android:textStyle="bold"
+            android:gravity="center|right"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

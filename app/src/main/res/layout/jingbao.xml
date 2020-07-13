@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+<View
+    android:layout_width="10dp"
+    android:layout_height="match_parent"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/lay_jingbao"
+        android:weightSum="10"
+        android:layout_margin="10dp"
+        >
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/jingbao0"
+        android:id="@+id/jingbao_picleft"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/jingbao_text"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="7"
+        />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:id="@+id/jingbao_num"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/next"
+        android:id="@+id/jingbao_picright"
+        android:layout_weight="1"
+        />
+    </LinearLayout>
+</LinearLayout>

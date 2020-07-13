@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorbackground"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="@color/colorTUHUANG"
+            android:gravity="center"
+             />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.ronda.bluetoothassist.utils.MChart
+            android:id="@+id/myChart"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center" />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:id="@+id/Bline"
+                />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5"
+    android:layout_below="@id/Bline"
+    android:layout_marginTop="20dp"
+        android:id="@+id/buttons"
+    >
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清空数据"
+                android:background="@drawable/bg_cleardata"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看数据"
+                android:background="@drawable/bg_showdata"
+                android:id="@+id/Lookdata"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lineB"
+                android:background="@drawable/bg_linev"
+                android:text="蓝色曲线"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lineR"
+                android:background="@drawable/bg_linei"
+                android:text="红色曲线"
+                android:layout_weight="1"
+                />
+                 <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/connect_main"
+                android:background="@drawable/bg_linei"
+                android:text="连接"
+                android:layout_weight="1"
+                />
+            <!--<Button-->
+                <!--android:layout_weight="1"-->
+                <!--android:id="@+id/btn2"-->
+                <!--android:text="WIFi"-->
+                <!--android:background="@drawable/bg_wifi"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+</LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:id="@+id/Bline2"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/buttons"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/limit_layout"
+                android:layout_below="@id/Bline2"
+                >
+                <com.ronda.bluetoothassist.RollTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="焊口编号:"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:id="@+id/hankouNum_text"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorblack"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_handao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:spinnerMode="dropdown"
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:id="@+id/Bline5"
+                android:layout_below="@id/limit_layout"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/Bline5"
+                android:id="@+id/blue_red_view"
+
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="红线数值："
+                        android:id="@+id/redlinestring"
+                        android:textSize="30dp"
+                        android:gravity="center"
+                        android:layout_weight="0.5"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/redlinedata"
+                        android:text="0.0"
+                        android:textSize="30dp"
+                        android:gravity="center"
+                        android:layout_weight="1.5"
+
+
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000"
+                    android:id="@+id/Bline3"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:id="@+id/remove_layout"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="蓝线数值："
+                        android:id="@+id/bluelinestring"
+                        android:textSize="30dp"
+                        android:gravity="center"
+                        android:layout_weight="0.5"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/bluelinedata"
+                        android:text="0.0"
+                        android:textSize="30dp"
+                        android:gravity="center"
+                        android:layout_weight="1.5"
+
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000"
+                    android:id="@+id/Bline4"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/zgshlogo"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="中石化石油工程设计有限公司"
+                    android:textStyle="bold"
+                    android:gravity="center|right"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:src = "@mipmap/back"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="16dp"
+                android:id="@+id/floatingActionButton_graph"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

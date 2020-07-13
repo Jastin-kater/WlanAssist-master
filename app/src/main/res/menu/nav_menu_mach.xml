@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<group android:checkableBehavior="single">
+
+
+    <item
+        android:icon="@mipmap/dev1"
+        android:id="@+id/dev_1"
+        android:title="1号设备"
+        />
+
+    <item
+        android:id="@+id/dev_2"
+        android:icon="@mipmap/dev2"
+        android:title="2号设备"
+        />
+
+
+
+</group>
+</menu>

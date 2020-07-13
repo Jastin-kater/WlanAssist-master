@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="70dp"
+    android:orientation="vertical"
+    android:id="@+id/parent_container"
+    >
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent" android:layout_height="60dp"
+    android:weightSum="10"
+    android:layout_margin="4dp"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/image_parent"
+        android:layout_width="30dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/active"
+        android:background="@drawable/bt_circle_bg"
+        />
+    <View
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        ></View>
+    <TextView
+        android:layout_weight="8"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="父控件内容"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/colorblack"
+        android:id="@+id/content_parent"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/expended"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:src="@mipmap/next" />
+</LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/parent_dashed_view"
+        />
+    </LinearLayout>

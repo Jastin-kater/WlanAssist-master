@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/science"
+    >
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+
+        android:background="@drawable/changeip_bg_normal"
+        >
+    <!--输入框-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_above="@+id/view_jiange"
+
+            >
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="NOW"
+                android:layout_weight="2"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_marginLeft="22dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ip"
+                android:text="192.168.1.162"
+                android:textColor="#efca64"
+                android:layout_weight="2"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="502"
+                android:textColor="#efca64"
+                android:id="@+id/port"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/IPhint"
+            android:id="@+id/view_jiange"
+            android:background="@color/colorPrimary"
+
+            />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_above="@+id/porthint"
+    android:id="@+id/IPhint"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="IP : "
+    android:textColor="#FFFFFF"
+    android:layout_marginLeft="32dp"
+    android:textSize="20sp"
+
+    />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="请输入设备IP地址"
+    android:textColorHint="#FFFFFF"
+    android:gravity="center"
+    android:id="@+id/edit_ip"
+    />
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/porthint"
+    android:layout_centerInParent="true"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="PORT : "
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="请输入设备端口号"
+    android:textColorHint="#FFFFFF"
+    android:id="@+id/edit_port"
+    android:gravity="center"
+    />
+</LinearLayout>
+    <!--确认按钮-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/porthint"
+    android:id="@+id/button_ip"
+    >
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="取消"
+    android:id="@+id/button_cancelSetIP"
+    android:layout_weight="1"
+    android:alpha="0.8"
+    />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="确认"
+    android:layout_weight="1"
+    android:id="@+id/button_setIP"
+    android:alpha="0.8"
+    />
+
+</LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/zgshlogobai"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="中石化石油工程设计有限公司"
+            android:textStyle="bold"
+            android:gravity="center|right"
+            android:textColor="@color/colorwhite"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src = "@mipmap/back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:id="@+id/floatingActionButton_ip"
+        />
+
+</RelativeLayout>
